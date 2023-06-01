@@ -7,7 +7,18 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/CodaeSeong/springconfig
+          uri: git@github.com:CodaeSeong/cloudconfig.git
           default-label: main
           search-paths: /**
+          ignore-local-ssh-settings: true
+          private-key: |
+            -----BEGIN EC PRIVATE KEY-----
+            MHcCAQEEIAihqDz0gYGkyyjKt5HO965pSsIFUMIiGaSTo65BP43xoAoGCCqGSM49
+            AwEHoUQDQgAEXww3FwGoCUrisxBL/nIY54IFq8QfeoiMLcWQgFUePH9KnWHpS1fr
+            whsea/TFLfPlvrw+QIAaPlZuFjNiusclvQ==
+            -----END EC PRIVATE KEY-----
+          timeout: 4
+          strictHostKeyChecking: false
+          host-key: AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEmKSENjQEezOmxkZMy7opKgwFB9nkt5YRrYMjNuG5N87uRgg6CLrbo5wAdT/y6v0mKV0U2w0WZ2YB/++Tpockg=
+          host-key-algorithm: ecdsa-sha2-nistp256
 

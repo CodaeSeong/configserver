@@ -1,6 +1,6 @@
 #server
 server:
-  port: 8484
+  port: 8585
 
 spring:
   cloud:
@@ -9,7 +9,7 @@ spring:
         git:
           uri: git@github.com:CodaeSeong/cloudconfig.git
           default-label: main
-          search-paths: /**
+          search-paths: '/logi/**'
           ignore-local-ssh-settings: true
           private-key: |
             -----BEGIN EC PRIVATE KEY-----
